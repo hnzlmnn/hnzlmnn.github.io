@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>hnzlmnn</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 		<style>
 			html, body {
 				width: 100%;
@@ -9,43 +10,96 @@
 				color: #AAAAAA;
 				margin: 0px;
 				padding: 0px;
+				font-family: sans-serif;
 				display:table;
 			}
 
 			h1 {
 				margin: 10px 0px;
 				padding: 0px;
-				text-transform: lowercase;
 			}
 
 			h2 {
 				margin: 0px;
 				padding: 0px;
 			}
-			
+
 			.content {
 				display:table-cell;
 				vertical-align:middle;
 				text-align: center;
 				margin: 30px;
 			}
-			
-			.content > span {
+
+			.content > div {
 				display: inline-block;
+				text-align: center;
+			}
+
+			.row > span {
+				display:table-cell;
+				vertical-align:top;
 				text-align: left;
 			}
-			
+
+			.text {
+				padding-left: 10px;
+			}
+
+			.text ul {
+				list-style-type: none;
+				padding-left: 0px;
+			}
+
+			.profileimage {
+				width: 200px;
+				border: -4px solid white;
+				border-radius: 4px;
+			}
+
 			.accent {
 				color: #1CA8DD;
 			}
+
+			a, a:link, a:visited {
+				text-decoration: none;
+				color: #1CA8DD;
+			}
+
+			a:active, a:hover {
+				color: #ffffff;
+			}
+
+			noscript em {
+				color: red;
+			}
 		</style>
+		<script type="text/javascript">
+			function generate_mail(user, domain) {
+				document.write("<a href=\"mailto");
+        document.write(":" + user + "@");
+        document.write(domain + "\"><i class=\"fa fa-envelope\"></i> " + user + "@" + domain + "<\/a>");
+			}
+		</script>
 	</head>
 	<body>
 		<div class="content">
-			<span>
-				<h1 class="accent">hnzlmnn</h1>
-				<h2>under construction...</h2>
-			</span>
+			<div class="row">
+				<span>
+						<img class="profileimage" src="assets/img/hnzlmnn.jpg" />
+				</span>
+				<span class="text">
+					<h1 class="accent">Malte Heinzelmann</h1>
+					<ul>
+						<li><a href="https://github.com/hnzlmnn"><i class="fa fa-github"></i> hnzlmnn</a></li>
+						<li><a href="https://twitter.com/hnzlmnn"><i class="fa fa-twitter"></i> hnzlmnn</a></li>
+						<li>
+							<script type="text/javascript">generate_mail('malte','hnzlmnn.de');</script>
+							<noscript><em>Email address protected by JavaScript. Activate JavaScript to see the email.</em></noscript>
+						</li>
+					</ul>
+				</span>
+			</div>
 		</div>
 	</body>
 </html>
