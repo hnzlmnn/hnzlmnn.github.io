@@ -77,9 +77,17 @@
 		<script type="text/javascript">
 			function generate_mail(user, domain) {
 				document.write("<a href=\"mailto");
-        document.write(":" + user + "@");
-        document.write(domain + "\"><i class=\"fa fa-envelope\"></i> " + user + "@" + domain + "<\/a>");
+        			document.write(":" + user + "@");
+        			document.write(domain + "\"><i class=\"fa fa-envelope\"></i> " + user + "@" + domain + "<\/a>");
 			}
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-63610438-1', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</head>
 	<body>
